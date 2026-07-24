@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Google Analytics (GA4) — tracks visits so we can see traffic, where
+     it comes from, and whether people are using the site/form. Google
+     recommends placing this as high in <head> as possible. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JV8Q0G59K4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JV8Q0G59K4');
+</script>
+
 <title>Abstract Concrete &amp; Flooring Solutions | Charlotte Area, NC</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231D2B2C'/%3E%3Cpath d='M50 50 L50 13 A37 37 0 0 1 87 50 Z' fill='%2373595A'/%3E%3Cpath d='M50 51 L50 42 L57 42 L57 35 L64 35 L64 29' fill='none' stroke='%23F5F3F0' stroke-width='3.2'/%3E%3Cpath d='M53 53 L83 42 M57 56 L85 46' fill='none' stroke='%23F5F3F0' stroke-width='2.3' stroke-linecap='round'/%3E%3Cpath d='M50 18 A32 32 0 1 0 76 66' fill='none' stroke='%23F5F3F0' stroke-width='12'/%3E%3C/svg%3E" />
 <meta name="description" content="Family-owned concrete coating and flooring serving the greater Charlotte, NC area. Epoxy flake flooring, shop floors, metallic, concrete stain & overlays. Licensed & insured. Up to a 10-year warranty. Free estimates." />
@@ -516,6 +529,47 @@
     .mini-stats{gap:22px}
   }
 </style>
+
+<!--
+  Schema.org structured data (JSON-LD).
+  This block is invisible to visitors — it's only here so Google can read
+  clear, unambiguous facts about the business (name, phone, service area,
+  rating) instead of having to guess by reading the page text.
+  areaServed uses a 50-mile GeoCircle centered on the business's real
+  Google Business Profile coordinates, since Abstract serves an area
+  rather than having one storefront address.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Abstract Concrete & Flooring Solutions",
+  "image": "https://www.abstractflooringsolutions.com/assets/logo-mark.png",
+  "url": "https://www.abstractflooringsolutions.com/",
+  "telephone": "+19803625422",
+  "email": "Tom.Miller@abstractflooringsolutions.com",
+  "description": "Family-owned concrete coating and flooring serving the greater Charlotte, NC area. Epoxy flake flooring, shop floors, metallic, concrete stain & overlays. Licensed & insured. 10-year warranty. Free estimates.",
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.334505,
+      "longitude": -81.0560856
+    },
+    "geoRadius": "80467"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "57"
+  },
+  "sameAs": [
+    "https://www.facebook.com/share/18QB7qUwW6/?mibextid=wwXIfr",
+    "https://www.instagram.com/abstract.concrete.solutions",
+    "https://www.google.com/maps/place/Abstract+Concrete+%26+Flooring+Solutions/@35.3338352,-81.7155349,173159m/data=!3m1!1e3!4m15!1m8!3m7!1s0x2930d3fc9ac8b375:0xaa35b2e2dc88fb29!2sAbstract+Concrete+%26+Flooring+Solutions!8m2!3d35.334505!4d-81.0560856!10e1!16s%2Fg%2F11y3nvx5_3!3m5!1s0x2930d3fc9ac8b375:0xaa35b2e2dc88fb29!8m2!3d35.334505!4d-81.0560856!16s%2Fg%2F11y3nvx5_3?hl=en-US"
+  ]
+}
+</script>
 </head>
 <body>
 

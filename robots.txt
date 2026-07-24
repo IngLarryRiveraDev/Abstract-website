@@ -1,0 +1,6 @@
+# Allow all search engines to crawl the entire site.
+User-agent: *
+Allow: /
+
+# Tells crawlers where to find the list of pages to index.
+Sitemap: https://www.abstractflooringsolutions.com/sitemap.xml

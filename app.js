@@ -128,7 +128,17 @@
       });
     });
     dateInput.min = new Date().toISOString().split('T')[0];
-    dateInput.addEventListener('click', function (e) { e.stopPropagation(); });
+    dateInput.addEventListener('click', function (e) {
+      e.stopPropagation();
+      // The native calendar-open button always sticks to the right edge of
+      // this input, which is stretched to fill the whole "Pick a specific
+      // date" pill — so a click on the icon/text (left/center) misses it.
+      // showPicker() opens the calendar directly, no matter where in the
+      // pill the click landed. Guarded for older browsers that lack it.
+      if (dateInput.showPicker) {
+        try { dateInput.showPicker(); } catch (err) {}
+      }
+    });
     dateInput.addEventListener('change', function () {
       if (!dateInput.value) return;
       var d = new Date(dateInput.value + 'T00:00:00');

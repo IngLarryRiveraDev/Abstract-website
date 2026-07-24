@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap for abstractflooringsolutions.com
+  Note: the site is currently a single-page app (one real URL, with
+  home/services/gallery/about/reviews/contact shown via JS instead of
+  separate pages), so there is only one <url> entry to list here.
+  If the site is ever split into real separate pages (see point 4 of the
+  SEO plan), each new page should get its own <url> block below.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.abstractflooringsolutions.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
